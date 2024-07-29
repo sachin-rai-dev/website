@@ -502,6 +502,7 @@ textarea::-webkit-scrollbar {
   text-decoration: none;
 }
 
+
 .footerinner2{
   color: azure;
  background-color: #050200;
@@ -560,7 +561,7 @@ textarea::-webkit-scrollbar {
     display: none;
   }
   
-  /* homesa section 1 */
+  /* homesa section 1 ADD*/
 
   .homesa2 {
     visibility: hidden;
