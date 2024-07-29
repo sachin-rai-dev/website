@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./components/nav";
+import Footer from "./components/footer";
 
 function Company() {
   return (
@@ -116,7 +117,7 @@ function Company() {
       </div>
 
        
-
+       <Footer/>
     </div>
   );
 }

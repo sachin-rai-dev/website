@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/footer';
 import Homesa from './components/home-sa';
 import Homesb from './components/home-sb';
 import Homesc from './components/home-sc';
@@ -15,6 +16,7 @@ function App() {
         <Homesb/>
         <Homesc/>
         <Homesd/>
+        <Footer/>
         
     </div>
   );

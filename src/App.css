@@ -481,6 +481,41 @@ textarea::-webkit-scrollbar {
   height: 2rem;
 }
 
+/* footer code start */
+
+.footer{
+  display: grid;
+  background-color: #050200;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+}
+.footerinner{
+  color: azure;
+
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.footerinner span a{
+  color: azure;
+  text-decoration: none;
+}
+
+.footerinner2{
+  color: azure;
+ background-color: #050200;
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+}
+
+
+.footerinner span:hover{
+  width: fit-content;
+  border-bottom:2px solid #F2751A;
+}
 
 
 
@@ -649,6 +684,18 @@ textarea::-webkit-scrollbar {
     justify-content: space-around;
   }
 
+  /* footer code */
+  .footer{
+    grid-template-columns:1fr 1fr  ;
+  }
+  .imgfooter{
+      height: 80px;
+      
+    }
+    .imgfooter img{
+      height: 5rem;
+    }
+
 
   
 }
@@ -757,6 +804,12 @@ textarea::-webkit-scrollbar {
   .grid1 h1{
     max-width: 85%;
   }
+
+  /* footer code */
+  .footer{
+    grid-template-columns:1fr ;
+  }
+
   
     
 
