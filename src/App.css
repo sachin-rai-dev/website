@@ -3,6 +3,9 @@
 *{
   font-family: syne;
 }
+body{
+  width:100vw;
+}
 
 
   
@@ -518,6 +521,100 @@ textarea::-webkit-scrollbar {
   border-bottom:2px solid #F2751A;
 }
 
+      /* foorm code */
+
+.grid-form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}      
+
+.formbox{
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #050200;
+}      
+    
+.formmain1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.formmain1 h1{
+  color: #F2751A;
+  font-weight: 700;
+}
+.formmain1 h5{
+  color: white;
+
+}
+
+.formmain2{
+  padding: 20px;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+   justify-content: space-evenly;
+   justify-content: center;
+}
+.formmain2 input{
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom:2px solid white ;
+  
+}
+.formmain2 textarea{
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom:2px solid white ;
+}
+.formmain2 textarea::placeholder{
+  color: white;
+  font-size: 16px;
+}
+.formmain2 .inputdiv{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.formmain2 .inputdiv input{
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom:2px solid white ;
+ 
+}
+
+.formmain2 .inputdiv input::placeholder{
+  color: white;
+  font-size: 16px;
+}
+.formmain2 form {
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formmain2 form .formsubmit{
+  font-weight: 400;
+  color: #050200;
+  border-radius: 28px;
+  width: fit-content;
+  padding: 4px 10px 4px 10px;
+  background-color: white;
+}
+.inputdiv label{
+  color: white;
+}
+
+
 
 
 
@@ -695,6 +792,41 @@ textarea::-webkit-scrollbar {
     }
     .imgfooter img{
       height: 5rem;
+    }
+
+    /* form code */
+
+    .grid-form{
+      
+      grid-template-columns: repeat(1,1fr);
+    }     
+
+    .formmain1{
+      text-align: left;
+      padding: 8px;
+    }
+
+    .formmain2{
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding: 0px;
+    }
+    .formmain2 form{
+      padding: 0px;
+      gap: 50px;
+    }
+    .formbox{
+      padding: 6px;
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+    .formmain2 .inputdiv{
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 10px;
+    }
+    .formmain2 h1{
+      margin-bottom: 14px;
     }
 
 

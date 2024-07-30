@@ -1,0 +1,68 @@
+import React from 'react'
+import { db, storage} from '../firebase-config';
+import { addDoc, collection } from 'firebase/firestore';
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+
+
+function Form() {
+     async function handelsubmit(e) {
+    e.preventDefault();
+
+    let file = e.target.file.files;
+
+    const storageRef = ref(storage, `files/${file[0].name}`);
+        await uploadBytes(storageRef, file);
+        const fileURL = await getDownloadURL(storageRef);
+
+
+    let data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      text: e.target.text.value,
+      file:fileURL ||"sachin not data hear"
+    };
+
+    try {
+
+      await addDoc(collection(db,"form"), data);
+
+      alert("form is sended")
+      
+    } catch (error) {
+      
+      console.log(error)
+    }
+
+   
+
+  }
+  return (
+    <div className='grid-form formbox white-bg'>
+
+        <div className='formmain1'>
+            <h5>have an idea?</h5>
+            <h1>drop as a line!</h1>
+            <h5>webgennsolutions@gmail.com</h5>
+        </div>
+
+        <div className='formmain2'>
+            <form onSubmit={handelsubmit}>
+                <div className='inputdiv'>
+                  <input type="text" name='name' placeholder='Your Name' required/>
+                  <input type="email" name='email' placeholder="Your Email" required/>
+                </div>
+                <textarea name="text" placeholder='tell us about your project' required></textarea>
+                <label >
+                        <input type="file" name="file" multiple placeholder='Attach file '/>
+                        Attach file
+                </label>
+
+                <input type="submit" value="submit" className='formsubmit' />
+            </form>
+        </div>
+
+    </div>
+  )
+}
+
+export default Form
