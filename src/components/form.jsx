@@ -16,7 +16,7 @@ function Form() {
  
       const storageRef = ref(storage, `files/${file[0].name}`);
         await uploadBytes(storageRef, file);
-        const fileURL = await getDownloadURL(storageRef);
+        let fileURL = await getDownloadURL(storageRef);
    
       }
     
@@ -26,7 +26,7 @@ function Form() {
       name: e.target.name.value,
       email: e.target.email.value,
       text: e.target.text.value,
-      file:fileURL || "no data"
+      file:fileURL
     };
 
     try {
