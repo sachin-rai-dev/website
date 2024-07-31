@@ -10,16 +10,23 @@ function Form() {
 
     let file = e.target.file.files;
 
-    const storageRef = ref(storage, `files/${file[0].name}`);
+    let fileURL="no data";
+      
+     if(file[0]){
+ 
+      const storageRef = ref(storage, `files/${file[0].name}`);
         await uploadBytes(storageRef, file);
         const fileURL = await getDownloadURL(storageRef);
+   
+      }
+    
 
 
     let data = {
       name: e.target.name.value,
       email: e.target.email.value,
       text: e.target.text.value,
-      file:fileURL ||"sachin not data hear"
+      file:fileURL || "no data"
     };
 
     try {
@@ -52,10 +59,12 @@ function Form() {
                   <input type="email" name='email' placeholder="Your Email" required/>
                 </div>
                 <textarea name="text" placeholder='tell us about your project' required></textarea>
-                <label >
-                        <input type="file" name="file" multiple placeholder='Attach file '/>
-                        Attach file
-                </label>
+
+                <span className='formspan'>
+
+                <label for="file">Attach file</label>
+                        <input type="file" name="file" multiple placeholder='Attach file ' id='file'/>
+                </span>
 
                 <input type="submit" value="submit" className='formsubmit' />
             </form>

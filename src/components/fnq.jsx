@@ -1,33 +1,25 @@
-import React from 'react'
+import { useState } from "react";
+import {question} from "../lib"
 
-function Gridlayout({data}) {
-  return (
-    <div className='w-100'>
-        
-        <div className='grid'>
 
-        {data.map((val,i)=>{
-            
-            return(
-            
-                  <div className=' gridcomponent' key={i} >
-                     <div className='gridcomponent1'>
-                        <h1>{val.heding}</h1>
-                        <span>0{i+1}</span>
-                     </div>
-                     <div className='gridcomponent2'>
-                        <p>{val.para}</p>
-                     </div>
-                  </div>
-
-                 )
-
-        })}
-        
-        </div>
-
-    </div>
-  )
-}
-
-export default Gridlayout
+export default function Fnq() {
+   let [show,getshow]=useState(question[0].id);
+   return (
+ 
+       <div className="white-bg fnqmain">
+   <h1 className='title'>Still, Have Questions In Your Mind?</h1>
+     <div className='faqouter'>
+       {question.map((faqit,i)=>{
+         return(
+           <div className='faqitems'>
+           <h2 onClick={()=>getshow(faqit.id)}> {faqit.question} 
+             <span className={show === faqit.id ? 'active' : ''}>{">"}</span> </h2>
+           <p className={show === faqit.id ? 'faqshow' : ''}> {faqit.ans}</p>
+         </div>
+         );
+       })}
+     </div>
+ </div>
+     
+   )
+ }

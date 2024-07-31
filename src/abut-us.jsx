@@ -1,10 +1,11 @@
 import React from "react";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
+import Fnq from "./components/fnq";
 
 function Company() {
   return (
-    <div>
+    <div className="with-100">
       <Nav />
       <div>
         <div className="abuts1">
@@ -24,7 +25,7 @@ function Company() {
 
       {/* second section 2 */}
 
-      <div className="white-bg">
+      <div className="white-bg with-100">
         <div className="abuts2">
           <div className="abuts2left">
             <h5>Mission</h5>
@@ -115,6 +116,9 @@ function Company() {
         </div>
 
       </div>
+
+
+        <Fnq/>
 
        
        <Footer/>
