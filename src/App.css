@@ -4,13 +4,20 @@
   font-family: syne;
 }
 body{
-  width:100vw;
   background-image: url("https://cdn.phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/bg.png.webp");
 }
 
+
 .with-100{
-  width: 100vw;
+  width: 100% !important;
 }
+.colorh1{
+  color: #F2751A;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
 
 
   
@@ -697,6 +704,12 @@ transition: 0.3s;
   transform: scaleY(1) !important;
   padding: 15px !important;
   
+}
+
+
+.clintscor{
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 
 

@@ -22,10 +22,10 @@ function Footer() {
 
           <div className='footerinner'>
             <h1>Socials</h1>
-            <span>facebook</span>
-            <span>instagram</span>
-            <span>LinkedIn</span>
-            <span>Twitter</span>
+            <span><a href="https://www.facebook.com/share/YJYEgnsNvjVYo1Bt/?mibextid=qi2Omg">facebook</a></span>
+            <span><a href="https://www.instagram.com/webgennsolutions/">instagram</a></span>
+            <span><a href="">LinkedIn</a></span>
+            <span><a href="https://x.com/WebGennsolution?t=1F05YBNe2WISm9gujsWOBQ&s=09">Twitter</a></span>
           </div>
       
 
@@ -42,7 +42,7 @@ function Footer() {
       <div className='footerinner2'>
         <span>
          <h4>Email us</h4>
-         <p>webgennsolutions@gmail.com</p>
+         <a href='mailto:webgennsolutions@gmail.com' className='text-decoration-none text-white'>webgennsolutions@gmail.com</a>
        </span>
 
        <span>

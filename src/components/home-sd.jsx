@@ -8,7 +8,7 @@ function Homesd () {
 
         <h1 className='text-center text-bold'>our Servises</h1>
 
-        <div className=' homesdboxmain row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-4 row-gap-5 column-gap-1'>
+        <div className=' homesdboxmain row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-4 row-gap-5 column-gap-1 '>
 
         <div class="col homesdbox border border-success-subtle rounded">
           <h1 className='text-center'> Website design</h1>
