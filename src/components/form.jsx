@@ -4,7 +4,7 @@ import { addDoc, collection } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 
-function Form() {
+function Form(props) {
      async function handelsubmit(e) {
     e.preventDefault();
 
@@ -16,7 +16,7 @@ function Form() {
  
       const storageRef = ref(storage, `files/${file[0].name}`);
         await uploadBytes(storageRef, file);
-        let fileURL = await getDownloadURL(storageRef);
+          fileURL = await getDownloadURL(storageRef);
    
       }
     
@@ -48,7 +48,7 @@ function Form() {
 
         <div className='formmain1'>
             <h5>have an idea?</h5>
-            <h1>drop as a line!</h1>
+            <h1>{props.titel}</h1>
             <h5>webgennsolutions@gmail.com</h5>
         </div>
 

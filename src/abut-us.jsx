@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import Fnq from "./components/fnq";
+import Form from "./components/form";
 
 function Company() {
   return (
@@ -119,6 +120,8 @@ function Company() {
 
 
         <Fnq/>
+
+        <Form titel={"drop as a line!"}/>
 
        
        <Footer/>

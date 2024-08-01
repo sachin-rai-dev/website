@@ -42,7 +42,7 @@ function Footer() {
       <div className='footerinner2'>
         <span>
          <h4>Email us</h4>
-         <p>juyhbhfhd@gmail.com</p>
+         <p>webgennsolutions@gmail.com</p>
        </span>
 
        <span>
