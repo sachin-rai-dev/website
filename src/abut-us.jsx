@@ -3,6 +3,7 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 import Fnq from "./components/fnq";
 import Form from "./components/form";
+import Button from "./components/button";
 
 function Company() {
   return (
@@ -11,7 +12,7 @@ function Company() {
       <div>
         <div className="abuts1">
           <div className="abuts1left">
-            <h1>International full-cycle product development company</h1>
+            <h1 className="text-ani">International full-cycle product development company</h1>
             <p>
               A team of top-performers who leverage their expertise in Business
               Analysis, UI&UX Design, and Development to build products that
@@ -117,6 +118,8 @@ function Company() {
         </div>
 
       </div>
+
+      <Button/>
 
 
         <Fnq/>

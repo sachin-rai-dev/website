@@ -8,8 +8,8 @@ function Homesb() {
       </div>
       <div className="homesb2 w-50 ">
         <h1>
-          <span>Full service studio for both</span> 
-          <span>startups and established businesses</span>
+          <span >Full service studio for both</span> 
+          <span >startups and established businesses</span>
         </h1>
       </div>
     </div>

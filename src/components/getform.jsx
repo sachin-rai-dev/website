@@ -14,7 +14,7 @@ function Getform() {
     if (file[0]) {
       const storageRef = ref(storage, `files/${file[0].name}`);
       await uploadBytes(storageRef, file);
-      let fileURL = await getDownloadURL(storageRef);
+      fileURL = await getDownloadURL(storageRef);
     }
 
     let data = {
