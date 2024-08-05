@@ -48,7 +48,7 @@ function Form(props) {
 
         <div className='formmain1'>
             <h5>have an idea?</h5>
-            <h1>{props.titel}</h1>
+            <h1 className='textani'>{props.titel}</h1>
             <h5><a href="mailto:webgennsolutions@gmail.com" className='text-decoration-none text-white'>webgennsolutions@gmail.com</a></h5>
         </div>
 

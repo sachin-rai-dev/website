@@ -8,6 +8,8 @@ body{
 }
 
 
+
+
 .with-100{
   width: 100% !important;
 }
@@ -794,10 +796,72 @@ transition: 0.3s;
   transform: translateY(-32%);
 }
 
+                           /* servise section start */
 
+.servises1{
+  padding: 80px 10px 10px 10px;
+  color: white;
+  background-color: #050200;
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servises1 h1{
+  font-size: 5rem;
+  font-weight: 700;
+  animation-name:;
+}
 
+.ank{
+  text-wrap: nowrap;
+  font-size:1rem ;
+  text-decoration: none;
+  font-weight: 500;
+  color: #050200;
+}
+.servises1 div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  justify-content: baseline;
+  gap: 10px;
+  flex-direction:column-reverse;
+  align-items: center;
 
+}
+.servises1 div span{
+ padding: 30px;
+ text-wrap: wrap;
+  text-align: center;
+}
+.servises1 div button{
+  height: 36px;
+}
+.animatiin{
+  animation-name: split;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+@keyframes split{
+  from{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0%);
+    opasity:1;
+  }
+}
 
+.textani{
+  animation-name:split ;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}
 
 
 
@@ -1078,8 +1142,16 @@ transition: 0.3s;
       transition: 0.8s;
       transform: translateY(-32%);
     }
+
+    /* servise section div code start */
     
-    
+    .servises1{
+      height: 80vh;
+    }
+    .servises1 h1{
+      font-size: 2rem;
+      font-weight: 700;
+    }  
     
     
 
