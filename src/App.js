@@ -1,4 +1,5 @@
 import './App.css';
+import Button from './components/button';
 import Footer from './components/footer';
 import Form from './components/form';
 import Homesa from './components/home-sa';
@@ -18,7 +19,8 @@ function App() {
         <Homesb/>
         <Homesc/>
         <Homesd/>
-        <div className='homesdboxmain row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-4 row-gap-5 column-gap-1 gx-0 clintscor white-bg with-100'>
+        <Button/>
+        <div className='homesdboxmain row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-4 row-gap-5 column-gap-1 gx-0 clintscor white-bg with-100 py-5'>
           <div className='col p-2 text-center '>
             <h1 className='colorh1'>Project Done</h1>
             <h1>165+</h1>

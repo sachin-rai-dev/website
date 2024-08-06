@@ -26,3 +26,22 @@ export const question =[
     }
 
 ]
+
+export let disign=[
+    {
+        src:"Idea.svg",
+        h1:"Full-cycle support",
+        h3:"We will support you in producing a product that ticks all your boxes and meets your users' needs."
+    },
+    {
+        src:"Pen.svg",
+        h1:"Team as one",
+        h3:"Our team is made up of specialists from a range of fields. Their comprehensive approach takes care of everything from research and business analysis to design and development."
+    },
+    {
+        src:"Screen.svg",
+        h1:"Ahead of modernity",
+        h3:"Providing the most up-to-date UI is also a key focus for us. Check out our case studies to see how we've helped other businesses."
+    }
+
+]

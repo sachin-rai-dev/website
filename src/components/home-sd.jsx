@@ -2,7 +2,7 @@ import React from 'react'
 
 function Homesd () {
   return (
-    <div className='homesd white-bg '>
+    <div className='homesd white-bg py-5'>
     
 
 

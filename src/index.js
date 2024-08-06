@@ -33,6 +33,10 @@ let rout=createBrowserRouter([
   {
     path:"Projects",
     element:<Project/>
+  },
+  {
+    path:"*",
+    element:<div><h1>404</h1></div>
   }
 ])
 

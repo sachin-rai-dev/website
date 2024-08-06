@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Getform from './getform';
 
 function Nav() {
@@ -17,7 +17,12 @@ function Nav() {
     }
     
  },[menustate])
+
+ let navigate=useNavigate()
   
+ let navigat=()=>{
+    navigate("/")
+ }
 
  
   
@@ -26,7 +31,7 @@ function Nav() {
     <div>
       <div className='s-nav'>
 
-        <img src="webgenn.png" alt="logo" height="50px" className='logo' />
+        <img src="webgenn.png" alt="logo" height="50px" className='logo' onClick={navigat}/>
 
         <nav ref={menu}>
           <NavLink to="/"  className={({isActive})=>isActive?"active":"inactive"}><span className='nava '>Home<span/></span></NavLink>
