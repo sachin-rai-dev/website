@@ -4,9 +4,9 @@ function Homesa() {
   return (
     
     <div className="homesa1">
-        <h1>
-          <span>Crafting Cutting-Edge Web Solutions for</span> Tomorrow's
-          <span> Businesses</span>
+        <h1 className="animatiin">
+          Crafting Cutting-Edge Web ,<span className="text-orange"> Solutions for </span><span className="text-orange"> Tomorrow's </span>
+           Businesses
         </h1>
 
         <div className="homesa2">

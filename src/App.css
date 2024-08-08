@@ -340,6 +340,42 @@ textarea::-webkit-scrollbar {
   padding: 10px;
 }
 
+/* home sa section slider code */
+
+.slid-card{
+  width: 100vw;
+  display:flex;
+  align-items: center;
+  padding-top:20px ;
+  padding-bottom: 20px;
+  justify-content: center;
+  
+}
+.slid-cardmain{
+  padding: 18px;
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #e7f870;
+  color: #050200;
+  border-radius: 10px;
+}
+.slid-cardmain-1{
+  justify-content: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.slid-cardmain-1 img{
+  border-radius: 50%;
+}
+.slid-cardmain-1 h3{
+  display: flex;
+  align-items: center;
+}
+
 /* abut section 1 css code start */
 
 .abuts1 {
@@ -764,7 +800,6 @@ textarea::-webkit-scrollbar {
 .servises1 h1 {
   font-size: 5rem;
   font-weight: 700;
-
 }
 
 .ank {
@@ -799,7 +834,7 @@ textarea::-webkit-scrollbar {
 }
 @keyframes split {
   from {
-    transform: translateY(70%);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -833,7 +868,7 @@ textarea::-webkit-scrollbar {
 /* servise section card */
 .servisecardgrid {
   display: grid;
- 
+
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
@@ -887,11 +922,11 @@ textarea::-webkit-scrollbar {
   }
 
   .homesa1 h1 {
-    font-size: 11vh;
+    font-size: 6vh;
     color: #f2751a;
-    font-weight: 760;
-    transform: scale(0.7);
-    position: absolute;
+    font-weight: 600;
+
+    /* position: absolute; */
     right: -20%;
     margin-top: -30px;
   }
@@ -910,16 +945,12 @@ textarea::-webkit-scrollbar {
     transform: scale(1.5);
   }
 
-
   /* servise section 3 start*/
 
-  .srvises3{
-    font-size: 1.5rem ;
-   }
-} 
-
-
-
+  .srvises3 {
+    font-size: 1.5rem;
+  }
+}
 
 @media (max-width: 820px) {
   .homesa1 h1 {
@@ -1127,12 +1158,11 @@ textarea::-webkit-scrollbar {
   }
   .servises2 .servises2left {
     width: 100%;
-    
   }
-   /* servise section 3 */
-   .srvises3{
+  /* servise section 3 */
+  .srvises3 {
     font-size: small;
-   }
+  }
 
   .heding-black {
     font-size: 2rem;
@@ -1154,8 +1184,22 @@ textarea::-webkit-scrollbar {
   }
 
   .homesa1 h1 {
-    font-size: 16vw;
-    left: -30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #f8f4f1;
+    font-size: 7vw;
+    font-weight: 700;
+    width: 100vw;
+    position: static;
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+  }
+  .homesa2 {
+    display: none;
+  }
+  .homesa3 img {
+    height: 40vh;
   }
   /* homesb */
 
@@ -1201,6 +1245,8 @@ textarea::-webkit-scrollbar {
     height: 75vw;
   }
 
+                          
+  
   /* abut section 2 css code */
 
   .abuts2 {

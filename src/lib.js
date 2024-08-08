@@ -45,3 +45,32 @@ export let disign=[
     }
 
 ]
+
+export let slidedata=[
+    {
+        src:"Idea.svg",
+        h3:"sachin rai",
+        para:"lorem is not the king of the honkong you bro"    
+    },
+    {
+        src:"Idea.svg",
+        h3:"sachin rai",
+        para:"lorem is not the king of the honkong you bro"    
+    },
+    {
+        src:"Idea.svg",
+        h3:"sachin rai",
+        para:" lorem is not the king of the lorem is not the king of the lorem is not the king of the honkong you brolorem is not the king of the honkong you bro"    
+    },
+    {
+        src:"Idea.svg",
+        h3:"sachin rai",
+        para:"lorem is not the king of the honkong you bro"    
+    },
+    {
+        src:"Idea.svg",
+        h3:"sachin rai",
+        para:"lorem is not the king of the honkong you bro"    
+    }
+
+]
